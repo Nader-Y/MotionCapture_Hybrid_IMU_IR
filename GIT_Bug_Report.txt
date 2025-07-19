@@ -1,0 +1,22 @@
+
+Git Workflow Report — Date: 2025-07-19
+
+First, run git init in your project folder. This creates a new Git repository locally by adding a hidden .git folder that tracks all version history, branches, and metadata.
+
+Next, connect your local repo to the remote GitHub repository with git remote add origin git@github.com:YourUsername/YourRepo.git. This sets the link so you can push and pull code between your local machine and GitHub.
+
+To save your current files to Git, stage them with git add . which adds all changed and new files to the staging area. Then commit these staged files to the local repository with git commit -m "Initial commit with folder structure", which creates a snapshot with a descriptive message.
+
+Push your commits to the remote main branch by running git push -u origin main. The -u option sets upstream tracking, so future pushes are easier.
+
+When you want to work on a new feature without affecting main, create and switch to a new branch with git checkout -b feature-branch-A. This branch is a separate timeline where you can add or change files independently.
+
+Make your changes on the feature branch (e.g., add a new file xx.txt), then stage and commit them with git add xx.txt and git commit -m "Add xx.txt feature". These commits exist only on the feature branch locally until pushed.
+
+To return to the stable main branch, run git checkout main. Your working folder updates to reflect main’s last committed state, so files unique to your feature branch (like xx.txt) will disappear here.
+
+Once your feature is ready, merge it into main locally with git merge feature-branch-A. Git combines changes from the feature branch into main. If there are no conflicts, Git auto-creates a merge commit. Otherwise, you resolve conflicts manually, then commit the merge.
+
+Finally, push your updated main branch with git push origin main to update the remote repository, making the merged changes (including new files like xx.txt) available to others.
+
+Throughout this workflow, remember that branches live inside your local .git folder as pointers to commits, and only one branch is checked out at a time in your working directory. Switching branches changes your visible files to match that branch’s last commit, so files unique to one branch won’t appear when you switch to another until merged.
