@@ -48,10 +48,8 @@ The microcontroller collects IMU and timing data, optionally synchronizes with c
 - Validate with LED wall or green screen studio environment
 - Publish open-source reference design and documentation
 
-## Contributors
 
-- Nader Yahia (Hardware and Firmware)
-- [Add additional contributors here]
+
 
 
 
