@@ -1,0 +1,3 @@
+1- STM32F401xB : https://www.mouser.de/ProductDetail/STMicroelectronics/STM32F401RCT6TR?qs=9MuLHSklicoVqPhyWc0q%2FA%3D%3D
+2- W5500: https://www.mouser.de/ProductDetail/WIZnet/W5500?qs=2vh%252B45pPFtzthUpYPd4pqA%3D%3D
+3- STM32F405xx (Native MAC) : https://www.mouser.de/ProductDetail/STMicroelectronics/STM32F407ZGT6?qs=Z8%252BeY1k3TIKo142SZNWnSQ%3D%3D
